@@ -38,6 +38,8 @@ public class App {
 			public void actionPerformed(ActionEvent e) {
 				if(canvas.getMode() == 1) canvas.setMode(0);
 				else canvas.setMode(1);// 1 = AddPoint Mode
+				frame.setFocusable(true);
+				frame.requestFocus();
 			}
 		});
 		
@@ -46,6 +48,8 @@ public class App {
 			public void actionPerformed(ActionEvent e) {
 				if(canvas.getMode() == 2) canvas.setMode(0);
 				else canvas.setMode(2);// 2 = ConnectPoints Mode
+				frame.setFocusable(true);
+				frame.requestFocus();
 			}
 		});
 		
@@ -54,13 +58,17 @@ public class App {
 			public void actionPerformed(ActionEvent e) {
 				if(canvas.getMode() == 3) canvas.setMode(0);
 				else canvas.setMode(3);// 3 = FindPath Mode
+				frame.setFocusable(true);
+				frame.requestFocus();
 			}
 		});
 		
 		frame.addMouseListener(canvas);
 		frame.addMouseWheelListener(canvas);
 		frame.addKeyListener(canvas);
-
+		frame.setFocusable(true);
+		frame.requestFocus();
+ 
 		frame.getContentPane().add(BorderLayout.NORTH, menu);
 		frame.getContentPane().add(BorderLayout.CENTER, canvas);
 		frame.setLocationRelativeTo(null);

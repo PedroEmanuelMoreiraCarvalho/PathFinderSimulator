@@ -34,10 +34,10 @@ public class StreetGraph {
 
 	public void render(Graphics g, int gap_x, int gap_y, float zoom) {
 		for(Street street: streets) {
-			points.get(street.objects_index[0]).drawStreetTo(g, points.get(street.objects_index[1]), gap_y, gap_y, zoom);
+			points.get(street.objects_index[0]).drawStreetTo(g, points.get(street.objects_index[1]), gap_x, gap_y, zoom);
 		}
 		for(Street path_street: path) {
-			points.get(path_street.objects_index[0]).drawPathTo(g, points.get(path_street.objects_index[1]), gap_y, gap_y, zoom);
+			points.get(path_street.objects_index[0]).drawPathTo(g, points.get(path_street.objects_index[1]), gap_x, gap_y, zoom);
 		}
 		for(Point point: points) {
 			point.render(g, gap_x, gap_y, zoom);

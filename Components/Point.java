@@ -22,9 +22,9 @@ public class Point {
 		g.setColor(Color.gray);
         Graphics2D g2d = (Graphics2D) g;
         g2d.setStroke(new BasicStroke(5.0F));
-		g2d.drawLine(((int)((zoom + 1) * x)) - App.off_set_render_x + gap_x + 105,
+		g2d.drawLine(((int)((zoom + 1) * x)) - App.off_set_render_x + gap_x + 5,
 					((int)((zoom + 1) * y)) - App.off_set_render_y + gap_y + 6,
-					((int)((zoom + 1) * point2.getX())) - App.off_set_render_x + gap_x + 105, 
+					((int)((zoom + 1) * point2.getX())) - App.off_set_render_x + gap_x + 5, 
 					((int)((zoom + 1) * point2.getY())) - App.off_set_render_y + gap_y + 6);
 	}
 	
@@ -32,9 +32,9 @@ public class Point {
 		g.setColor(Color.red);
         Graphics2D g2d = (Graphics2D) g;
         g2d.setStroke(new BasicStroke(5.0F));
-		g2d.drawLine(((int)((zoom + 1) * x)) - App.off_set_render_x + gap_x + 105,
+		g2d.drawLine(((int)((zoom + 1) * x)) - App.off_set_render_x + gap_x + 5,
 					((int)((zoom + 1) * y)) - App.off_set_render_y + gap_y + 6,
-					((int)((zoom + 1) * point2.getX())) - App.off_set_render_x + gap_x + 105, 
+					((int)((zoom + 1) * point2.getX())) - App.off_set_render_x + gap_x + 5, 
 					((int)((zoom + 1) * point2.getY())) - App.off_set_render_y + gap_y + 6);
 	}
 	

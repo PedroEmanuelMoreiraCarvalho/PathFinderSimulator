@@ -102,15 +102,14 @@ public class Canvas extends JComponent implements MouseListener, MouseWheelListe
 	@Override
 	public void keyPressed(KeyEvent e) {
 		int key = e.getKeyCode();
-		System.out.println("XD");
 		if(key == KeyEvent.VK_W) {
-			gap_y -= 10;
-		}else if(key == KeyEvent.VK_S) {
 			gap_y += 10;
+		}else if(key == KeyEvent.VK_S) {
+			gap_y -= 10;
 		}if(key == KeyEvent.VK_D){
-			gap_x += 10;
-		}else if(key == KeyEvent.VK_A) {
 			gap_x -= 10;
+		}else if(key == KeyEvent.VK_A) {
+			gap_x += 10;
 		}
 		update();
 	}
